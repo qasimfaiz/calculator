@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #55b5ca, #0e323b);
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+}
+
+.display-container input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    background-color: transparent;
+    color: #444;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.display-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.display-container button img {
+    vertical-align: middle;
+    margin: -5px;
+}
+
+.input-container {
+    text-align: left;
+}
+
+.input-container p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ddd;
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #2193b0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.strength-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.strength-container div[data-indicator] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ddd; /* Default color */
+    margin-left: 10px;
+}
+
+/* Colors for different strength levels */
+.strength-weak {
+    background-color: #ff4d4d;
+}
+
+.strength-medium {
+    background-color: #ffd700;
+}
+
+.strength-strong {
+    background-color: #4caf50;
+}
+
+button.generateButton {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #2193b0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.generateButton:hover {
+    background: #6dd5ed;
+}
