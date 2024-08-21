@@ -49,6 +49,7 @@ h1 {
     color: #444;
     font-size: 16px;
     padding: 5px;
+    width: 100%;
 }
 
 .display-container button {
@@ -60,7 +61,7 @@ h1 {
 
 .display-container button img {
     vertical-align: middle;
-    margin: -5px;
+    
 }
 
 .input-container {
